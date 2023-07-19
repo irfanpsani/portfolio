@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Irfan</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="home.html" class="nav__link ">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link active">About</a></li>
+                        <li class="nav__item"><a href="skill.html" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+
+            <!--===== ABOUT =====-->
+            <link rel="stylesheet" href="assets/css/style 2.css">
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    
+                                    <image class="home__blob-img" x="60" y="60" href="assets/img/Irfan ps.jpeg"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p>I am a versatile professional with a unique blend of skills and expertise in the fields of analysis, financial consulting/advising, and development. With a passion for leveraging data-driven insights, optimizing financial strategies, and creating innovative solutions, I strive to make a meaningful impact in the business world.</p>
+                            <div class="tab-titles">
+                            
+                                <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('Education')">Education</p>
+                            </div>
+                          
+                            <div class="tab-contents" id="Experience">
+                                <ul>
+                                    <li><span>Business consultant</span><br>Business financial consultant for past 3 years.</li>
+                                    <li><span>Data Analyst</span><br>Junior Data analyst for 4 years.</li>
+                                    <li><span>Web Developer</span><br>worked as web developer in between this years</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="Education">
+                                <ul>
+                                    <li><span>Masters in Msc Computer Science with Data Analytics</span><br>Post graduate in cs.</li>
+                                    <li><span>BCA</span><br>Degree in Computer Application.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+            
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+                function opentab(tabname){
+                     for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                     }
+                     for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                     }
+                     event.currentTarget.classList.add("active-link")
+                     document.getElementById(tabname).classList.add("active-tab");
+                }
+            </script>
+            
+            <script>
+            
+                var sidemenu = document.getElementById("sidemenu");
+                function openmenu(){
+                    sidemenu.style.right ="0";
+                }
+                function closemenu(){
+                    sidemenu.style.right="-200px"
+                }
+            </script>
+
+   <!--===== FOOTER =====-->
+   <footer class="footer">
+    <p class="footer__title">Irfan</p>
+    <div class="footer__social">
+        <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+        <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+        <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+    </div>
+    <p class="footer__copy">&#169; copyright. IRFAN P SANI</p>
+</footer>
+
+            </body>
+            </html>

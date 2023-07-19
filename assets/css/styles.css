@@ -112,8 +112,8 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  background-color: #2cb5eb;
+  box-shadow: 0 1px 4px rgba(146, 2, 2, 0.15);
 }
 
 /*===== NAV =====*/
@@ -158,7 +158,7 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-color: whitesmoke;
 }
 
 .nav__logo {
@@ -166,7 +166,7 @@ img {
 }
 
 .nav__toggle {
-  color: var(--second-color);
+  color: white;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -243,10 +243,11 @@ img {
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;
-  padding: .75rem 2.5rem;
+  padding: .75rem 4rem;
   font-weight: var(--font-semi);
-  border-radius: .5rem;
+  border-radius: 1rem;
   transition: .3s;
+  font-size: 20px;
 }
 
 .button:hover {
@@ -320,7 +321,7 @@ img {
 }
 
 .skills__html {
-  width: 95%;
+  width: 85%;
 }
 
 .skills__css {
@@ -328,15 +329,30 @@ img {
 }
 
 .skills__js {
-  width: 65%;
-}
-
-.skills__ux {
   width: 85%;
 }
 
+.skills__c {
+  width: 85%;
+}
+
+.skills__dbms {
+  width: 85%;
+}
+
+.skills__tb {
+  width: 85%;
+}
+
+.skills__rg {
+  width: 85%;
+}
+
+
 .skills__img {
-  border-radius: .5rem;
+  border-radius: 2rem;
+  width: 350px; ;
+  height:200px;
 }
 
 /* ===== WORK =====*/
@@ -381,7 +397,7 @@ img {
 
 /* ===== FOOTER =====*/
 .footer {
-  background-color: var(--second-color);
+  background-color: #2cb5eb;
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
@@ -527,4 +543,22 @@ img {
   .home__img {
     width: 450px;
   }
+}
+
+/*  skill images */
+.column {
+  float: right;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: flexbox;
+}
+
+
+.home_socials
+{
+  margin-bottom: 100px;
 }
